@@ -42,7 +42,15 @@
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-      <a-video src="https://www.youtube.com/watch?v=MtiUx_szKbI"></a-video>
+      
+      
+      <a-assets>
+        <!-- No loop. -->
+        <video id="my-video" src="https://www.youtube.com/watch?v=MtiUx_szKbI" autoplay="true">
+      </a-assets>
+
+      <a-entity geometry="primitive: box" material="src: #my-video"></a-entity>
+        
     </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
