@@ -44,7 +44,12 @@
       smoothThreshold="5"
     >
 
-      <a-video src="airbending.mp4"></a-video>
+        <a-assets>
+          <video id="penguin-sledding" autoplay loop="true" src="penguin-sledding.mp4"></video>
+      </a-assets>
+
+      <!-- Using the asset management system. -->
+      <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
         
     </a-nft>
     <a-entity camera></a-entity>
