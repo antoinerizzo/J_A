@@ -33,10 +33,6 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
-     <a-assets>
-        <!-- No loop. -->
-        <video id="my-video" src="https://www.youtube.com/watch?v=MtiUx_szKbI" autoplay="true">
-      </a-assets>
        
     <!-- we use cors proxy to avoid cross-origin problems -->
     <a-nft
@@ -48,7 +44,7 @@
       smoothThreshold="5"
     >
 
-      <a-entity geometry="primitive: box" material="src: #my-video"></a-entity>
+      <a-video src="airbending.mp4"></a-video>
         
     </a-nft>
     <a-entity camera></a-entity>
