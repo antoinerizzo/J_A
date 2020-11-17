@@ -25,7 +25,7 @@
 <body style="margin : 0px; overflow: hidden;">
   <!-- minimal loader shown until image descriptors are loaded -->
   <div class="arjs-loader">
-    <div>Loading, please wait...5 a 1</div>
+    <div>Loading, please wait...10 to 1 count</div>
   </div>
   <a-scene
     vr-mode-ui="enabled: false;"
@@ -43,9 +43,9 @@
       type="nft"
       url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/antoinerizzo/J_A/main/image-smal"
       smooth="true"
-      smoothCount="10"
+      smoothCount="1"
       smoothTolerance=".01"
-      smoothThreshold="1"
+      smoothThreshold="5"
     >
 
        <a-entity geometry="primitive: cylinder; height: 90; radius: 40" position="0 0 0" material="src: #my-video"></a-entity>
