@@ -33,7 +33,11 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
-       
+    <a-assets>
+      <!-- No loop. -->
+      <video id="my-video" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/antoinerizzo/J_A/main/hugo_1.mp4" autoplay="true">
+    </a-assets>
+         
     <!-- we use cors proxy to avoid cross-origin problems -->
     <a-nft
       type="nft"
@@ -44,7 +48,7 @@
       smoothThreshold="5"
     >
 
-       <a-entity geometry="primitive: cylinder; height: 90; radius: 40" position="0 0 0"></a-entity>
+       <a-entity geometry="primitive: cylinder; height: 90; radius: 40" position="0 0 0" material="src: #my-video"></a-entity>
 
         
     </a-nft>
